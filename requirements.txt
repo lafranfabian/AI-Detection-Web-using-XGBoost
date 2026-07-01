@@ -1,0 +1,24 @@
+# ══════════════════════════════════════════════════════════
+#  requirements.txt — AI Text Detector v1.1
+#  Python >= 3.10
+# ══════════════════════════════════════════════════════════
+
+# ── Web Framework ─────────────────────────────────────────
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9    # Wajib untuk file upload (multipart/form-data)
+pydantic>=2.9.0            # Data validation (FastAPI built-in)
+
+# ── Machine Learning ──────────────────────────────────────
+scikit-learn>=1.4.0        # ColumnTransformer, TfidfVectorizer, StandardScaler
+xgboost>=1.7.0             # XGBoost classifier
+joblib>=1.3.0              # Load/save .pkl artifacts
+
+# ── Data Processing ───────────────────────────────────────
+numpy>=1.24.0              # Array operations
+pandas>=2.0.0              # DataFrame untuk preprocessing input
+
+# ── Document Parsing ──────────────────────────────────────
+pymupdf>=1.23.0            # PDF parsing (import fitz)
+Pillow>=10.0.0             # Image processing (OCR fallback)
+python-docx>=1.1.0         # DOCX parsing

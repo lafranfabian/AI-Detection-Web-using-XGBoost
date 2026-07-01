@@ -1,0 +1,4 @@
+install dependecy dulu pip install -r requirments.txt
+cd backend
+python -m uvicorn main:app --reload
+baru live 
